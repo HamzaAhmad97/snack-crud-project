@@ -1,3 +1,4 @@
+from django.db.models import fields
 from django.views.generic import TemplateView, DetailView, CreateView, UpdateView, DeleteView
 from .models import Snack
 
@@ -13,5 +14,9 @@ class SnackCreateView(CreateView):
     model = Snack
     fields = ['title', 'purchaser', 'description']
     
+class SnackUpdateView(UpdateView):
+    model = Snack
+    fields = ['title', 'description']
+
 
     
