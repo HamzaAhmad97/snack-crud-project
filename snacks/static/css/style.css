@@ -1,0 +1,121 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0 1rem;
+    background-color: #222629;
+}
+nav {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.5rem 1rem 1.5rem;
+    width: inherit;
+}
+
+nav .links {
+    display: flex;
+    gap: 1.5rem;
+}
+nav .links a{
+    text-decoration: none;
+    color: white;
+    padding: 0.25rem;
+}
+nav .links a:hover {
+    color: #86c232;
+}
+main {
+    min-height: 86vh;
+}
+@media screen and (min-width: 768px) {
+    body {
+        width: 768px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    main {
+        width: inherit;
+    }
+    nav {
+       width: 690px;
+    }
+}
+footer {
+    margin: 1rem 1.5rem 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    min-height: 25px;
+}
+h1 {
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+h4 a {
+    color: #86c232;
+}
+.desc {
+    color: #6b6e70;
+    line-height: 1em;
+    text-align: justify;
+}
+p {
+    color: #6b6e70;
+}
+.snack-box {
+    border: solid #474b4f;
+    margin: 1rem 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.snack-box h4 {
+    color: #86c232
+}
+.btn-link {
+    text-decoration: none;
+    
+}
+button {
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    margin: auto 0.25rem;
+    width: 4rem;
+    color: white
+}
+button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+#delete-btn button {
+    background-color: red;
+}
+#update-btn button {
+    background-color: #86c232;
+}
+.snack-title {
+    color: #86c232;
+}
+.details {
+    margin: auto 1rem;
+}
+#description, #purchaser {
+    text-align: justify;
+    color: #6b6e70 ;
+}
+#purchaser span{
+    font-weight: bold;
+}
+label {
+    color: #6b6e70;
+    display: block;
+    margin-bottom: 0.5rem;
+}
