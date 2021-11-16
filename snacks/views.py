@@ -5,4 +5,9 @@ class SnackListView(TemplateView):
     model = Snack
     context_object_name = 'snack_list'
 
+class SnackDetailView(DetailView):
+    model = Snack
+    context_object_name = 'snack_details'
 
+
+    
