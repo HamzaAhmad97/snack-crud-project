@@ -9,5 +9,9 @@ class SnackDetailView(DetailView):
     model = Snack
     context_object_name = 'snack_details'
 
+class SnackCreateView(CreateView):
+    model = Snack
+    fields = ['title', 'purchaser', 'description']
+    
 
     
