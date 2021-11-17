@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Top Snacks</h1>
+<p class="desc">This is a list of the most popular snacks in the US over the last few years. For every snack, you see two buttons, one for updating the snack, and the other is for removing the snack from the list.</p>
+<section class="snacks-container">
+    {% for snack in snack_list %}
+    <div class='snack-box'>
+        <h4><a href="{% url 'snack_detail' snack.pk %}">{{snack}}</a></h4>
+        <div>
+            <a class="btn-link" id='update-btn' href="{% url 'snack_update' snack.pk %}"> <button>Update</button> </a>
+            <a class="btn-link" id='delete-btn' href="{% url 'snack_delete' snack.pk %}"> <button>Delete</button> </a>
+        </div>
+    </div>
+    {% endfor %}
+</section>
+{% endblock %}
